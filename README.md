@@ -23,7 +23,7 @@ STDNet accepts a sequence of consecutive optical frames and processes them throu
 The experiments in the paper were implemented with PyTorch 1.13 on NVIDIA RTX 3090 GPUs. A typical environment can be prepared as follows:
 
 ```bash
-conda create -n stdnet python=3.7 -y
+conda create -n stdnet python=3.8 -y
 conda activate stdnet
 pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu113
 pip install -r requirements.txt
