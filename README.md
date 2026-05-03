@@ -59,6 +59,7 @@ data/
 ```
 
 For real-world evaluation, the paper uses BUAA-MSOD, a ground-based wide-field telescope benchmark containing 60 consecutive frames with 2,583 labeled targets across 11,170 cropped sub-images.
+If your data is in YOLO format, you can use the script STDNet/yolo2coco.py to convert it into the format required by our framework.
 
 ## Training
 
