@@ -6,3 +6,7 @@ matplotlib
 easydict
 scipy
 numpy
+sep
+pycocotools
+astropy
+thop

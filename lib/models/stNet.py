@@ -6,10 +6,14 @@ import torch
 from thop import profile
 
 from lib.models.STDNet import STDNet
+from lib.models.STDNet_Dynamic import STDNet_Dynamic
+from lib.models.STDNet_Static import STDNet_Static
 
 def model_lib(model_chose):
     model_factory = {
                     "STDNet": STDNet,
+                    "STDNet_Static": STDNet_Static,
+                    "STDNet_Dynamic": STDNet_Dynamic,
                      }
     return model_factory[model_chose]
 

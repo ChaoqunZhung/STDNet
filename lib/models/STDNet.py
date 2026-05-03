@@ -18,7 +18,7 @@ from lib.models.DCNv2.dcn_v2 import DCN
 import matplotlib.pyplot as plt
 from lib.models.cfg.head import CenternetHead
 from lib.models.cfg.neck import CS_CrossAttention,CBAM
-from lib.models.Dynamic_Stream import Dynamic_Stream
+from lib.models.cfg.Dynamic_Stream import Dynamic_Stream
 
 BN_MOMENTUM = 0.1
 logger = logging.getLogger(__name__)
