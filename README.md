@@ -77,12 +77,6 @@ CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 --master_port=36266 train.p
   --seqLen 5
 ```
 
-For real-data fine-tuning/evaluation splits, enable:
-
-```bash
---test_real_data True
-```
-
 Available model entries in this release are `STDNet`, `STDNet_Static`, and `STDNet_Dynamic`.
 
 ## Testing
