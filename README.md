@@ -2,7 +2,9 @@
 
 Official implementation of **STDNet: A Spatio-temporal Dual-stream Network for Detecting Faint Space Objects from Ground-Based Optical Imagery**.
 
-We introduce a high-fidelity ground-based optical image simulation method with focal length inversion and full-spectrum image degradation; the simulation toolkit can be obtained [at GitHub](https://github.com/ChaoqunZhung/OpticalSim). Based on the simulated and real observational data, STDNet provides an end-to-end solution for detecting faint, small, and moving space objects under low signal-to-noise ratio conditions.
+We introduce a high-fidelity ground-based optical image simulation method with focal length inversion and full-spectrum image degradation. Based on the simulated and real observational data, STDNet provides an end-to-end solution for detecting faint, small, and moving space objects under low signal-to-noise ratio conditions.
+
+# the simulation toolkit can be obtained [at GitHub](https://github.com/ChaoqunZhung/OpticalSim). 
 
 ## Highlights
 
@@ -73,8 +75,8 @@ CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 --master_port=36266 train.p
   --num_epochs 16 \
   --batch_size 4 \
   --val_intervals 1 \
-  --datasetname revise/snr \
-  --data_dir /path/to/annotations_0602 \
+  --datasetname revise/dataset \
+  --data_dir /path/to/annotations \
   --seqLen 5
 ```
 
@@ -123,4 +125,5 @@ Detecting low-SNR targets is the central challenge of ground-based space object 
 ## References
 
 1. Yuxi Guo, Junzhe Cao, Bindang Xue, *Multiframe spatio-temporal attention motion-adaptive network for moving space target detection*, Advances in Space Research, Vol. 76, No. 9, 2025.
-2. [OpticalSim](https://github.com/ChaoqunZhung/OpticalSim)
+# 2. [OpticalSim](https://github.com/ChaoqunZhung/OpticalSim)
+2. https://doi.org/10.5281/zenodo.20191925.
