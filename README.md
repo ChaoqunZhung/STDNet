@@ -1,7 +1,4 @@
-# STDNet
-
-Official implementation of **STDNet: A Spatio-temporal Dual-stream Network for Detecting Faint Space Objects from Ground-Based Optical Imagery**.
-
+# STDNet: A Spatio-temporal Dual-stream Network for Detecting Faint Space Objects from Ground-Based Optical Imagery
 We introduce a high-fidelity ground-based optical image simulation method with focal length inversion and full-spectrum image degradation. Based on the simulated and real observational data, STDNet provides an end-to-end solution for detecting faint, small, and moving space objects under low signal-to-noise ratio conditions.
 
 ## Highlights
