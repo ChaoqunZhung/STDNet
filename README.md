@@ -70,7 +70,7 @@ CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 --master_port=36266 train.p
   --num_epochs 16 \
   --batch_size 4 \
   --val_intervals 1 \
-  --datasetname revise/dataset \
+  --datasetname dataset \
   --data_dir /path/to/annotations \
   --seqLen 5
 ```
@@ -84,7 +84,7 @@ python test.py \
   --model_name STDNet \
   --gpus 0 \
   --load_model ./checkpoints/STDNet.pth \
-  --datasetname bhdata \
+  --datasetname dataset \
   --data_dir ./data/bhdata/ \
   --seqLen 5
 ```
