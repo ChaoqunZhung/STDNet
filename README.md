@@ -47,11 +47,10 @@ cd ../../..
 The dataset follows the COCO-style annotation format used by `lib/dataset/coco_bhdata.py`.
 
 ```text
-data/
-  bhdata/
-    train.json
-    val.json
-    test.json
+dataset/
+  train.json
+  val.json
+  test.json
     ...
 ```
 
