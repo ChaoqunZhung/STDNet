@@ -521,7 +521,7 @@ class PatchEmbed3D(nn.Module):
     
 @BACKBONES.register_module()
 class SwinTransformer3D(nn.Module):
-    def __init__(self, pretrained=None, pretrained2d=True, patch_size=(1,128,128), in_chans=3, # 修改patch_size
+    def __init__(self, pretrained=None, pretrained2d=True, patch_size=(1,4,4), in_chans=3, # 修改patch_size
                  embed_dim=96, depths=[2,2,6,2], num_heads=[3,6,12,24], window_size=(2,7,7),
                  mlp_ratio=4., qkv_bias=True, qk_scale=None, drop_rate=0., attn_drop_rate=0.,
                  drop_path_rate=0.2, norm_layer=nn.LayerNorm, patch_norm=True, frozen_stages=-1,
